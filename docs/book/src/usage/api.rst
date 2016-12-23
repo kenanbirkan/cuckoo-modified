@@ -148,14 +148,14 @@ Following is a list of currently available resources and a brief description of 
             # Add your code to error checking for request.status_code.
             
             json_decoder = json.JSONDecoder()
-            task_id = json_decoder.decode(request.text)["task_id"]
+            task_id = json_decoder.decode(request.text)["task_ids"]
             
             # Add your code toerror checking if task_id is None.
             
         **Example response**::
 
             {
-                "task_id" : 1
+                "task_ids" : 1
             }
 
         **Form parameters**:
